@@ -28,7 +28,7 @@ async function runTest() {
 
     const emailField = await driver.$('//android.widget.EditText[contains(@text, "email")]');
     if (await emailField.isExisting()) {
-      await emailField.setValue("balabagnojether@gmail.com");
+      await emailField.setValue("");
       console.log("Email field filled.");
     } else {
       console.warn("Email field not found.");
@@ -36,7 +36,7 @@ async function runTest() {
 
     const passwordField = await driver.$('//android.widget.EditText[contains(@text, "password")]');
     if (await passwordField.isExisting()) {
-      await passwordField.setValue("Pa$$w0rd");
+      await passwordField.setValue("");
       console.log("Password field filled.");
     } else {
       console.warn("Password field not found.");
